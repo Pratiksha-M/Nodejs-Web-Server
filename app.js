@@ -14,7 +14,7 @@ app.use((req, res, next) => {
   console.log(log);
   fs.appendFile('server.log', log + '\n', (err) => {
       if(err){
-        console.log('Unable to connect');
+        console.log('Unable to connect to the server');
       }
   });
   next();
